@@ -4,19 +4,19 @@
     <form action="/api/user/send-message" method="post">
 
         <label for="fName">First Name</label>
-        <input type="text" id="fName" name="fName" placeholder="Your name..">
+        <input type="text" id="fName" name="fName" placeholder="Your name.." required>
 
         <label for="lName">Last Name</label>
-        <input type="text" id="lName" name="lName" placeholder="Your last name..">
+        <input type="text" id="lName" name="lName" placeholder="Your last name.." required>
 
         <label for="email">Email</label>
-        <input type="text" id="email" name="email" placeholder="Your email..">
+        <input type="text" id="email" name="email" placeholder="Your email.." required>
 
         <label for="subjectLine">Subject Line</label>
-        <input type="text" id="subjectLine" name="subjectLine" placeholder="Write something..">
+        <input type="text" id="subjectLine" name="subjectLine" placeholder="Write something.." required>
 
         <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
 
         {{#if msg}}
             <div class="error-message {{#if good}}good{{else}}bad{{/if}}">
