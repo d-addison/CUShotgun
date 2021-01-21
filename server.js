@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 const http = require('http');
 const exphbs = require('express-handlebars');
-const PORT = 3000;
+const PORT = process.env.PORT ||3000;
 const server = http.createServer(app);
 const multer = require('multer');
 const upload = multer();
@@ -52,4 +52,4 @@ app.use('/', require('./views/routes/index')); // handles switching pages
 // set static folder
 app.use('/', express.static(path.join(__dirname, 'public')));
 
-server.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`));
+server.listen(PORT, () => console.log(`Server running at ${PORT}`));
