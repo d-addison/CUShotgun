@@ -15,39 +15,3 @@ function carousel() {
 
 // Functions
 carousel();
-
-$(document).ready(function() {
-    let notes = document.querySelectorAll(".notes");
-    for(let i = 0; i < notes.length; i++) {
-        $(notes[i]).click(function (e) {
-            console.log("hello!");
-            e.preventDefault();
-            if (notes[i].checked === true) {
-                addNote(i);
-            } else {
-                removeNote(i);
-            }
-        })
-    }
-});
-
-function addNote(i) {
-    let space = document.getElementById("notesSpace");
-    if (space.style.display !== "none") {
-        space.style.display = "block";
-    }
-
-    let itemDiv = document.createElement("DIV");
-    let textArea = document.createTextNode("Notes " + i + ":");
-    itemDiv.appendChild(textArea);
-    space.appendChild(itemDiv);
-
-}
-
-function removeNote(i) {
-    let space = document.getElementById("notesSpace");
-
-    document.getElementById(i.toString()).remove();
-
-    if (!space.hasChildNodes()) space.style.display = "none";
-}
