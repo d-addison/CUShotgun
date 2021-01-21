@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=0.7, initial-scale=1, maximum-scale=5">
+        <link rel="stylesheet" href="/css/stylesheet.css">
+        <link rel="icon" href="/imgs/favicon.jpg">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/db42033571.js" crossorigin="anonymous"></script>
+        <title>CU Shotgun</title>
+    </head>
+
+    <body id="backdrop">
+
+        <div id="navbar-background">
+            <nav id="navbar">
+                <div id="title">
+                    <a href="/">
+                        <h>Carleton University</h><br>
+                        <h id="titleBottom">Trap & Skeet Team</h>
+                    </a>
+                </div>
+
+                <div id="nav-spacer">
+
+                </div>
+
+                <ul id="navList">
+                    <li><a href="/" {{#if active.Home}}class="active"{{/if}}>Home</a></li>
+                    <li><a href="/events" {{#if active.Events}}class="active"{{/if}}>Events</a></li>
+                    <li><a href="/faq" {{#if active.Faq}}class="active"{{/if}}>FAQ</a></li>
+                    <li><a href="/contact" {{#if active.Contact}}class="active"{{/if}}>Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="empty-space"></div>
+
+        {{{body}}}
+
+        <div id="empty-space-footer"></div>
+
+        <footer id="footer">
+            <div class="media-logos">
+                <a href="https://www.facebook.com/CUTrapandSkeetTeam/" class="fab fa-facebook"></a>
+                <a href="https://www.instagram.com/cutrapskeetteam/?hl=en" class="fab fa-instagram"></a>
+                <a href="https://discord.gg/cEBxARNDrY" class="fab fa-discord"></a>
+                <a href="mailto:cutrapandskeet@gmail.com" class="fab far fa-envelope"></a>
+            </div>
+            <p>Author: David Addison<br>Copyright ©2021</p>
+        </footer>
+
+        <script src="/jquery-3.5.1.js"></script>
+        <script src="/script.js"></script>
+    </body>
+</html>
