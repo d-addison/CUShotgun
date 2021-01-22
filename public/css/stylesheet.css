@@ -1,9 +1,9 @@
-#empty-space {
-    height: 200px;
-}
+/*
+    Extra
+ */
 
-#empty-space-footer {
-    height: 104px;
+#empty-space {
+    height: 185px;
 }
 
 /*
@@ -13,7 +13,7 @@
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/52/Skeet._William_H._Keever%2C_USA.JPEG");
     <!-- TSGT Rick Sforza, U.S. Air Force, Public domain, via Wikimedia Commons -->
 
-    min-height: 200px;
+    height: auto;
 
     background-position: center;
     background-repeat: no-repeat;
@@ -24,7 +24,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 2;
 }
 
 
@@ -42,7 +42,7 @@
     margin: 0;
 
     opacity: 0.8;
-    min-height: 200px;
+    height: auto;
 
     transform: scaleX(-1);
 }
@@ -110,6 +110,13 @@
     background-color: #f5fffa;
     margin: 0;
     overflow-y: scroll;
+    font-family: "Open Sans", serif;
+}
+
+#text-container {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
 /*
@@ -204,14 +211,14 @@ table {
 
 #slideshow-1 {
     position: relative;
-    height: 600px;
+    height: 700px;
 }
 
 .slides {
     border: 0.1rem solid #555b6e;
     border-radius: 5px;
-    max-height: 540px;
-    max-width: 960px;
+    height: auto;
+    width: 900px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -225,7 +232,13 @@ table {
 .main-page-wrapper {
     height: auto;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+}
+
+.main-page-wrapper div {
+    display: inline-block;
+    font-size: 25px;
+    width: 85%;
 }
 
 .main {
@@ -247,51 +260,31 @@ table {
 }
 
 .sponsors {
-    padding: 20px;
-    color: white;
-    min-height: 1000px;
-    height: 1100px;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#cusf {
-    background-image: url("https://i1.wp.com/cusf.ca/wp-content/uploads/2019/04/Facebook-Page-Cover_2.gif?fit=1980%2C753&ssl=1");
-    width: auto;
     height: auto;
+    width: 80%;
+    margin: 10px auto;
 }
 
-#stittsville {
-    background-image: url("https://i.imgur.com/i3xFDYm.png");
-    width: auto;
-    height: auto;
-}
-
-#cusa {
-    background-image: url("https://www.cusaonline.ca/wp-content/uploads/CUSA_LogoWhite_Ver2.png");
-    background-color: #919191;
-    background-size: contain;
-}
-
-#image-beside {
-    display: inline-block;
-    vertical-align: top;
-    padding: 40px;
-}
-
-#image-beside img {
+#CFAC {
     mix-blend-mode: multiply;
 }
 
-#text-beside {
+#container {
     display: inline-block;
     font-size: 25px;
-    width: 65%;
-    text-align: left;
+    width: 85%;
 }
 
+#container__image {
+    width: auto;
+    margin: 30px 30px 30px 30px;
+    float: right;
+}
+
+#container__text {
+    display: inline;
+    text-align: left;
+}
 /*
     Contact Us
  */
@@ -340,21 +333,13 @@ input[type=submit]:hover {
  */
 
 #footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
     background-color: #2d3d47;
     color: #ffffff;
     text-align: center;
-}
-#footer div {
-    height: 46px;
-    position: relative;
-}
-
-#footer p {
-    font-size: 13px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
 }
 
 .fab {
@@ -366,6 +351,15 @@ input[type=submit]:hover {
     margin: 5px 2px;
     border-radius: 30%;
     color: black;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
 }
 
 /*
@@ -393,6 +387,8 @@ input[type=submit]:hover {
 
 .question {
     color: #5a7574;
+    margin: 0;
+    padding: 0;
 }
 
 .variable-size {
@@ -402,6 +398,7 @@ input[type=submit]:hover {
 .faq-size {
     height: auto;
     line-height: 100px;
+    text-decoration: underline;
 }
 
 .error-message {
@@ -418,4 +415,92 @@ input[type=submit]:hover {
 
 .bad {
     background-color: #e9c3c3;
+}
+
+/*
+    Media
+*/
+
+@media screen and (max-width: 2560px) {
+
+}
+
+/* 1920x1080 */
+@media screen and (max-width: 1920px) {
+
+}
+
+/* 1080x1080 */
+@media screen and (max-width: 1080px) {
+    #title {
+        font-size: 25px;
+    }
+
+    #titleBottom {
+        font-size: 36px;
+    }
+
+    #navList {
+        font-size: 12px;
+    }
+
+    #empty-space {
+        height: 130px;
+    }
+
+    #nav-spacer {
+        width: 30%;
+    }
+
+    .slides {
+        width: 70%;
+    }
+
+    #slideshow-1 {
+        height: 550px;
+    }
+
+    .main-page-wrapper div {
+        font-size: 20px;
+    }
+
+    #CFAC {
+        width: 300px;
+        height: auto;
+    }
+
+}
+
+/* Phone */
+@media screen and (max-width: 780px) {
+    #title {
+        font-size: 10px;
+    }
+
+    #titleBottom {
+        font-size: 16px;
+    }
+
+    #navList {
+        font-size: 6px;
+    }
+
+    #empty-space {
+        height: 100px;
+    }
+
+    #slideshow-1 {
+        position: relative;
+        height: 400px;
+    }
+
+    .main-page-wrapper div {
+        font-size: 15px;
+    }
+
+    #CFAC {
+        width: 200px;
+        height: auto;
+    }
+
 }
