@@ -27,7 +27,8 @@ router.post('/send-message', async (req, res) => {
     }
 
     transporter.sendMail(mail, function(err, info) {
-        if (err) return res.cookie('msg','Uh oh! Something went wrong! Please try again.', {maxAge: 1000}).redirect('/contact');
+        //if (err) return res.cookie('msg','Something went wrong, please try again. If this persists, email us directly.', {maxAge: 1000}).redirect('/contact');
+        if (err) return res.cookie('msg',err, {maxAge: 1000}).redirect('/contact');
         else return res.cookie('msg','Thanks for contacting us! We\'ll get back to you as soon as possible.', {maxAge: 1000}).redirect('/contact');
     });
 });
