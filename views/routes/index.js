@@ -19,7 +19,7 @@ router.get('/', (req, res) => {
 
 // Events Page
 router.get('/events', (req, res) => {
-    res.render('./layouts/events', {active: {Event: true}});
+    res.render('./layouts/events', {active: {Events: true}});
 });
 
 // FAQ Page
