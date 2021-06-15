@@ -10,7 +10,7 @@ router.post('/send-message', async (req, res) => {
         host: 'smtp.gmail.com',
         port: 465,
         service: 'gmail',
-        secure: false,
+        secure: true,
         auth: {
             user: 'cushotgun@gmail.com',
             pass: 'CuShotgun2021'
