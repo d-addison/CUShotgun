@@ -18,9 +18,10 @@ router.post('/send-message', async (req, res) => {
 
     let mail = {
         from: 'cushotgun@hotmail.com',
-        to: 'cutrapandskeet@gmail.com',
+        to: 'cutrapandskeet@gmail.com', 
+        cc: email,
         subject: subjectLine,
-        html:'<h>From: ' + email + '</h>' + '<br>' + '<p>Name: ' + name + '</p>' + '<p>Subject: ' + subject + '</p>'
+        html:'<h><b>From: </b>' + email + '</h>' + '<br>' + '<p><b>Name: </b>' + name + '</p>' + '<p><b>Subject: </b>' + subject + '\n</p>'
     }
 
     transporter.sendMail(mail, function(err, info) {
