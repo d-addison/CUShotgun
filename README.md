@@ -6,6 +6,9 @@
 The purpose of this website was to be able to more easily reach out to students and provide information to students.
 This is a great way to stand out among other clubs who may not have a website, and just gives us more chance at building our community.
 
+## Building & Running
+To run this project, simply copy the [sample config](./config-sample.js) to a file named `config.js` and add your credentials. Then run `npm install` and `npm start`
+
 ## Pages:
 #### Home
 ![mainPage](pictures/mainPage.png)
