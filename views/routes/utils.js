@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const nodemailer = require('nodemailer');
+const nodemailer = require('nodemailer'); 
 
 // gets all friend requests
 router.post('/send-message', async (req, res) => {
