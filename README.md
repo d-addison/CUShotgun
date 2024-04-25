@@ -1,4 +1,6 @@
-# CUShotgun - Website for the Carleton University Trap and Skeet Team
+# CU Shotgun - Website for the Carleton University Trap and Skeet Team
+
+## Note: This website is no longer maintained or hosted.
 
 ## Link: https://cutrapandskeet.herokuapp.com/
 
